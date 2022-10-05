@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+:root{
+  --firstlayer: #121212;
+  --secondlayer: #292929;
+  --accentColor: #d11313;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fullHeight{
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: var(--firstlayer);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NameCol{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.BlobCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.FredPic{
+  position: absolute;
+  margin-left: 10vw;
+  z-index: 3;
+  height: 35vw;
+  width: auto;
+}
+
+@media (min-width: 576px) { 
+  .NameCol{
+    height: 50vh !important;
   }
-  to {
-    transform: rotate(360deg);
+  .BlobCol{
+    height: 50vh !important;
+  }
+  .FredPic{
+    margin-left: 35vw !important;
+  }
+}
+
+@media (min-width: 768px) { 
+
+  .NameCol{
+    height: 100vh !important;
+  }
+
+  .BlobCol{
+    height: 100vh !important;
+  } 
+  .FredPic{
+    margin-left: 10vw !important;
+  }
+
+  
+}
+
+@media (min-width: 992px) { 
+  .NameCol{
+    height: 100vh !important;
+  }
+  .BlobCol{
+    height: 100vh !important;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+
+  .NameCol{
+    height: 100vh !important;
+  }
+
+  .BlobCol{
+    height: 100vh !important;
   }
 }

@@ -2,6 +2,7 @@
   --firstlayer: #121212;
   --secondlayer: #292929;
   --accentColor: #d11313;
+  --textcolor: white;
 }
 
 .fullHeight{
@@ -10,6 +11,7 @@
 
 body{
   background-color: var(--firstlayer);
+  overflow-x: hidden;
 }
 
 .NameCol{
@@ -33,9 +35,49 @@ body{
   width: auto;
 }
 
+.skewed {
+  margin-top: 25vh;
+  width: 100vw;
+  height: 14vh;
+  background: rgb(255,81,0);
+  z-index: 0;
+  transform: skewY(6deg);
+  transform-origin: top right;
+}
+
+.AboutMeHeader{
+  font-family: 'Oswald', sans-serif;
+  color: var(--textcolor);
+  font-weight: 800;
+  font-size: 5vw;
+  opacity: 0.5;
+}
+
+.AboutMeHead{
+  white-space: nowrap;
+}
+
+.AboutMeBody{
+  margin-top: 2vw;
+  margin-bottom: 7vw;
+  width: 40vw;  
+  opacity: 0.8;
+}
+
+.AboutMeText{
+  font-size: 2vw;
+}
+
+.AboutMeText{
+  font-family: 'Oswald', sans-serif;
+  color: var(--textcolor);
+  font-weight: 100;
+}
+
 @media (min-width: 576px) { 
   .NameCol{
     height: 50vh !important;
+    align-items: center !important;
   }
   .BlobCol{
     height: 50vh !important;

@@ -1,0 +1,45 @@
+
+
+.SocialsRow{
+    display: flex;
+    flex-direction: row !important;
+    color: white;
+    opacity: 0.5;
+    gap: 3vw;
+    justify-content: flex-end;
+    
+}
+
+.AnimateDown{
+    animation: AnimateDown 0.3s linear;
+}
+
+.ViewRow{
+    height: 3vw;
+}
+
+@keyframes AnimateDown {
+    0%{
+        transform: translateY(-100vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
+
+.SocialIcon{
+    font-size: 3vw;
+    margin-top: 0vw;
+}
+
+.SocialTitle{
+    margin-top: 0.5vw;
+    font-size: 2vw;
+}
+
+
+.BottomFixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

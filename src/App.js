@@ -1,13 +1,17 @@
 
 import './App.css';
+import AboutMe from './Components/AboutMe/AboutMe';
 import Introduction from './Components/IntroComponent/Introduction';
+import MyProjects from './Components/MyProjects/MyProjects';
+import Project from './Components/Project/Project';
+import SocialBar from './Components/SocialsTopBar/SocialBar';
 import Fred from './img/Fred.png'
 
 function App() {
-  
   return (
     <div className="App">
       <div className='container-fluid'>
+        <SocialBar/>
          <div className='row TestRow'>
 
             <div className='col-xs-12 col-sm-12 col-md-6 col-lg-6 NameCol fullHeight'>
@@ -20,18 +24,27 @@ function App() {
             </div>
 
          </div>
-         <div className="row">
-            <div className="skewed">
-              <div className='AboutMeHead'>
-                <h1 scrollamount="15" className="AboutMeHeader">ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME / ABOUT ME </h1>
-              </div>
-            </div>
+              <AboutMe/>
               <div className='AboutMeBody' id="AboutMe">
-                <h1 className="AboutMeText">Hello, I’m Hububba. <br></br> A 16 year old who is persuing a services job for others. Always delivering high quality and beautiful work ,and the best part is.. i work for free!</h1>
+                <h1 className="AboutMeText">Hello, I’m Hububba. <br></br> A 16 year old who is persuing a services job for others. Always delivering high quality and beautiful work ,and the best part is.. i work for free! <br></br>  Feel free to contact me over a project or work you need done.</h1>
               </div>
+              <h1 className="MyProjectsHeader">My Projects</h1>
+              <div className="ProjectsRow Delay_Animation">
+                <Project Title="AtomMC (Closed)" Description="Founder/Manager"/>
+                <Project Title="InfiniteMC (Closed)" Description="Owner"/>
+                <Project Title="PeachyMC (Closed)" Description="Admin"/>
+                <Project URL="https://open.spotify.com/artist/15wb7bTi3Y1qGiOvIeZ7GM?si=LUVGn4TARh6sjFJRhnKqPA" Title="Brody Baker" Description="I am the manager for a small music artist named Brody Baker. You can find his music here"/>
+                <Project Title="Reliable Services" Description="I am the manager to a very decent sized service team. I have watched this team grow substaintially and i am veru excited for the future of it"/>
+              </div>
+              <MyProjects/>
+              <ul>
+                <li className="Skill">Discord Setup</li>
+                <li className="Skill">Management</li>
+                <li className="Skill">Minecraft Server Management</li>
+                <li className="Skill">Graphic Design</li>
+              </ul> 
          </div>
       </div>
-    </div>
   ); 
 }
 

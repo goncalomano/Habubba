@@ -5,6 +5,15 @@
   --textcolor: white;
 }
 
+body{
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .fullHeight{
   height: 100vh;
 }
@@ -31,47 +40,24 @@ body{
   position: absolute;
   margin-left: 10vw;
   z-index: 3;
-  height: 35vw;
+  height: 35vh;
   width: auto;
 }
 
-.skewed {
-  margin-top: 25vh;
-  width: 100vw;
-  height: 14vh;
-  background: rgb(255,81,0);
-  z-index: 0;
-  transform: skewY(6deg);
-  transform-origin: top right;
-}
-
-.AboutMeHeader{
+.MyProjectsHeader{
   font-family: 'Oswald', sans-serif;
   color: var(--textcolor);
-  font-weight: 800;
-  font-size: 5vw;
-  opacity: 0.5;
+  font-size: 4vw;
+  margin-bottom: 2vw;
+  margin-left: 1vw;
 }
 
-.AboutMeHead{
-  white-space: nowrap;
-}
-
-.AboutMeBody{
-  margin-top: 2vw;
-  margin-bottom: 7vw;
-  width: 40vw;  
-  opacity: 0.8;
-}
-
-.AboutMeText{
-  font-size: 2vw;
-}
-
-.AboutMeText{
-  font-family: 'Oswald', sans-serif;
+.Skill{
   color: var(--textcolor);
-  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vw;
+  margin-bottom: 2vw;
+  margin-left: 2vw;
 }
 
 @media (min-width: 576px) { 
@@ -83,7 +69,33 @@ body{
     height: 50vh !important;
   }
   .FredPic{
-    margin-left: 35vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) { 
+  .NameCol{
+    height: 50vh !important;
+    align-items: center !important;
+  }
+  .BlobCol{
+    height: 50vh !important;
+  }
+  .FredPic{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .IntroTopText{
+    font-size: 10vw !important;
+  }
+  .IntroBottomText{
+    font-size: 10vw !important;
   }
 }
 
@@ -97,7 +109,8 @@ body{
     height: 100vh !important;
   } 
   .FredPic{
-    margin-left: 10vw !important;
+    margin-left: 60vw !important;
+    height: 35vw;
   }
 
   
@@ -110,6 +123,9 @@ body{
   .BlobCol{
     height: 100vh !important;
   }
+  .FredPic{
+    height: 35vw;
+  }
 }
 
 
@@ -121,5 +137,8 @@ body{
 
   .BlobCol{
     height: 100vh !important;
+  }
+  .FredPic{
+    height: 35vw;
   }
 }

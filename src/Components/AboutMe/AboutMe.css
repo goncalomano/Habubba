@@ -1,0 +1,48 @@
+.skewed {
+    margin-top: 25vh;
+    width: 100vw;
+    height: 7vw;
+    opacity: 0;
+    background: rgb(255,81,0);
+    z-index: 0;
+    transform: skewY(6deg);
+    transition: all 1s linear;
+    
+    transform-origin: top right;
+    overflow-x: hidden;
+  }
+
+  .ToTheLeft{
+    opacity: 1;
+  }
+  
+  .AboutMeHeader{
+    font-family: 'Oswald', sans-serif;
+    color: var(--textcolor);
+    font-weight: 800;
+    font-size: 5vw;
+    opacity: 0.5;
+  }
+  
+  .AboutMeHead{
+    white-space: nowrap;
+  }
+  
+  .AboutMeBody{
+    margin-top: 2vw;
+    margin-bottom: 7vw;
+    width: 40vw;  
+    opacity: 0.8;
+  }
+  
+  .AboutMeText{
+    font-size: 2vw;
+  }
+  
+  .AboutMeText{
+    font-family: 'Oswald', sans-serif;
+    color: var(--textcolor);
+    font-weight: 100;
+    margin-left: 1vw;
+  }
+  

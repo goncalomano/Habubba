@@ -1,0 +1,39 @@
+.ProjectsRow{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 10vw;
+
+}
+
+.ProjectDiv{
+    margin-bottom: 2vw;
+    background-color: var(--secondlayer);
+    min-height: 8vw;
+    width: 30vw;
+    border-radius: 0.5vw;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.Opacity1{
+    opacity: 1;
+}
+
+.ProjectTitle{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    opacity: 0.9;
+    font-size: 2.5vw;
+    font-family: 'Oswald', sans-serif;
+    color: var(--textcolor);
+}
+
+.ProjectDescription{
+    margin-left: 1vw;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+    color: var(--textcolor);
+    opacity: 0.5;
+    font-weight: 300;
+}

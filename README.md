@@ -1,5 +1,5 @@
-# Habbuba's Porfolio!
-This is a custom portfolio made exclusively for Habubba.\
+# Hubbuba's Porfolio!
+This is a custom portfolio made exclusively for Hububba.\
 In this guide you will find how to compile your code , and how the code is structured.
 
 ## Code Structure
